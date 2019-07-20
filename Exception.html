@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="L"></h1>
+    <script>
+        // for loop
+        for(i=1; i<5; i++){
+            console.log(`hello of value is ${i}`);
+        }
+        // While loop
+        let a=1;
+        while(a<=5){
+            console.log(`This is Value ${a}`);
+        }
+        //do while
+        let me=1;
+        do{
+            console.log(`Hello my friend ${me}`)
+        }while(me<0)
+        // interation
+            //for in
+        let person={
+            fname: Nalin,
+            lname: Far,
+            age: 18,
+            gender: 'male',
+            bio:function(){
+                console.log(`hello it me ${this.fname}`)
+            }
+        }
+        person.bio()
+        for(p in person){
+            console.log(person[p]);
+        }
+            //for of
+        // var r=document.getElementById('L')
+        // let my=[{
+        //     id: 1,
+        //     title: 'lover',
+        //     description: 'best of the year'
+        // },
+        // {
+        //     id: 2,
+        //     title: 'lover',
+        //     description: 'best of the year'
+        // },
+        // {
+        //     id: 3,
+        //     title: 'lover',
+        //     description: 'best of the year'
+        // }]
+        // for(u of my){
+        //     r.innerHTML += u.id +" " +u.title +" " + u.description +"<br>";
+        // }
+    </script>
+</body>
+</html>

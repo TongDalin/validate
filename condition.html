@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id='frm'>
+        <input type="text" id="day" placeholder="Please Input number">
+        <select id="SelectColor">
+            <option value="red">This is red</option>
+            <option value="green">This is green</option>
+            <option value="yellow">This is yellow</option>
+            <option value="pink">This is pink</option>
+            <option value="purple">This is purple</option>
+            <option value="blue">This is blue</option>
+            <option value="orange">This is orange</option>
+            <input type="submit">
+        </select>
+    </form>
+    <h1 align="center" id="heading"></h1>
+    <script>
+        var frm = document.getElementById('frm')
+        var h1 = document.getElementById('heading')
+        frm.addEventListener('submit', function (e) {
+            e.preventDefault()
+            var nDay = document.getElementById('day').value;
+            var selector = document.getElementById('SelectColor').value;
+            checkDay(nDay, selector)
+        })
+        function checkDay(date, Color) {
+            // if (date == '0' && Color == 'red') {
+            //     document.bgColor = Color;
+            //     h1.innerHTML = 'Today is Sunday'
+            // }
+            // else if (date == '1' && Color == 'green') {
+            //     document.bgColor = Color;
+            //     h1.innerHTML = 'Today is Monday'
+            // }
+            // else if (date == '2' && Color == 'yellow') {
+            //     document.bgColor = Color;
+            //     h1.innerHTML = 'Today is Tuesday'
+            // }
+            // else if (date == '3' && Color == 'pink') {
+            //     document.bgColor = Color;
+            //     h1.innerHTML = 'Today is Wednesday'
+            // }
+            // else if (date == '4' && Color == 'purple') {
+            //     document.bgColor = Color;
+            //     h1.innerHTML = 'Today is Thursday'
+            // }
+            // else if (date == '5' && Color == 'blue') {
+            //     document.bgColor = Color;
+            //     h1.innerHTML = 'Today is Friday'
+            // }
+            // else if(date>=7){
+            //     h1.innerHTML='can input only one number'
+            // }
+            // else {
+            //     document.bgColor='lightblue';
+            //     h1.innerHTML='can not blank'
+            // }
+            // else if (date.length>9){
+            //     h1.innerHTML='input lenght only one number'
+            // }
+            //switch case 
+
+            switch(date){
+                case '0':
+                    alert('Today is Sunday')
+                break;
+                case '1':
+                    alert('Today is Monday')
+                break;
+                case '2':
+                    alert('Today is Tuesday')
+                break;
+                case '3':
+                    alert('Today is Wednesday')
+                break;
+                case '4':
+                    alert('Today is Thursday')
+                break;
+                case '5':
+                    alert('Today is Friday')
+                break;
+                case '6':
+                    alert('Today is Saturday')
+                break;
+                default :
+                    alert('None');
+            }
+        }
+    </script>
+</body>
+
+</html>

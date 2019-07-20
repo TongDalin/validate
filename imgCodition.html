@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id='frm'>
+        <input type="text" id="day" placeholder="Please Input number">
+        <select id="SelectGender">
+            <option value="Boy">This is Boy</option>
+            <option value="Girl">This is Girl</option>
+            <input type="submit">
+        </select>
+    </form>
+    <h1 align="center" id="heading"></h1>
+    <img src="" alt="image" id="hooman">
+    <script>
+        var frm = document.getElementById('frm')
+        var h1 = document.getElementById('heading')
+        var human=document.getElementById('hooman')
+        frm.addEventListener('submit', function (e) {
+            e.preventDefault()
+            var selectorGender=document.getElementById('SelectGender').value;
+            displayImage(selectorGender)
+        })
+        function displayImage(gender){
+            var person=(gender=='Boy')? human.src="https://www.whatsappprofiledpimages.com/wp-content/uploads/2019/01/Cute-Boy-Whatsapp-DP-Profile-Images-5-300x300.jpg": human.src="https://images.pexels.com/photos/1391498/pexels-photo-1391498.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500"
+        }
+    </script>
+</body>
+
+</html>
